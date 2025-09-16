@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>blog - nairlytics.</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html" class="home">nairlytics</a>
+    <a href="about.html">About Me</a>
+    <a href="resume.html">Résumé</a>
+    <a href="aboutISM.html">About ISM</a>
+    <a href="aboutMentor.html">About the Mentor</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+  </div>
+
+  <div class="container">
+
+    <!-- First Blog Post -->
+    <div class="blog-post">
+      <h2 class="info">The Journey Begins: Week of September 1, 2025</h2>
+      <p class="info">This week in ISM was, to say the least, eventful. It was the true beginning of my journey in the program, with several projects. These included personal portfolios, résumés, and the preliminary research for our career fields.</p>
+      <p class="info">With these blogs, I not only want to highlight the highs, but also the lows in my journey. Thus, I aim in highlighting at least one challenge in every blog.</p>
+      <p class="info">This week's challenge was my personal portfolio. Although I had the option to use a website builder such as Wix, I decided to test my limits and create my own website. I went in with limited web development experience, and I had to learn a lot of techniques from scratch to tailor my website to my needs. The main challenge here, however, was making my website available to the public. The website is available through my Replit page, but only when the site is running (and, it doesn't run forever). So, I am putting myself to the test, to find a new way to host the site that will make my work accessible to the public both in and outside of school!</p>
+    </div>
+<!--
+     <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+     <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+     <script type="text/javascript" id="hcb"> 
+       if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%243p2XgCz.VuOJyO6S1JQJ%2F0"+"&opts=16798&num=10&ts=1757984258400");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); 
+     </script>
+-->
+<!--
+  <div class="comment-section">
+    <h2 class="info">Comments</h2>
+
+    <input type="text" id="name" placeholder="Your name">
+    <textarea id="comment" rows="3" placeholder="Write a comment..."></textarea>
+    <button onclick="addComment()">Post Comment</button>
+    <button onclick="clearComments()">Clear All Comments</button>
+
+    <div id="comments">No comments yet.</div>
+  </div>
+
+  <style>
+    .comment-section {
+      font-family: Arial, sans-serif;
+      background-color: #111; /* dark background to match navbar */
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      max-width: 600px;
+    }
+
+    .comment-section h2 {
+      margin-bottom: 10px;
+      color: #f1f1f1;
+    }
+
+    .comment-section input,
+    .comment-section textarea {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+
+    .comment-section button {
+      margin: 5px 5px 10px 0;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    .comment-section button:hover {
+      background-color: #555;
+    }
+
+    #comments {
+      margin-top: 15px;
+    }
+
+    .comment-item {
+      padding: 8px;
+      border-bottom: 1px solid #444;
+    }
+
+    .comment-item strong {
+      color: #ffcc00; /* makes the name pop */
+    }
+  </style>
+
+  <script>
+    const commentsDiv = document.getElementById('comments');
+
+    // Load saved comments
+    const loadComments = () => {
+      const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+      commentsDiv.innerHTML = savedComments.length ? '' : 'No comments yet.';
+      savedComments.forEach(c => displayComment(c.name, c.text));
+    };
+
+    const displayComment = (name, text) => {
+      const commentEl = document.createElement('div');
+      commentEl.classList.add('comment-item');
+      const strong = document.createElement('strong');
+      strong.textContent = name + ': ';
+      const span = document.createElement('span');
+      span.textContent = text;
+      commentEl.appendChild(strong);
+      commentEl.appendChild(span);
+      commentsDiv.prepend(commentEl);
+    };
+
+    window.addComment = function () {
+      const name = document.getElementById('name').value.trim();
+      const commentText = document.getElementById('comment').value.trim();
+      if (!name || !commentText) {
+        alert("Please enter both name and comment.");
+        return;
+      }
+
+      displayComment(name, commentText);
+
+      const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
+      savedComments.push({ name, text: commentText });
+      localStorage.setItem('comments', JSON.stringify(savedComments));
+
+      document.getElementById('name').value = '';
+      document.getElementById('comment').value = '';
+    };
+
+    window.clearComments = function () {
+      if (confirm("Are you sure you want to delete all comments?")) {
+        localStorage.removeItem('comments');
+        commentsDiv.innerHTML = 'No comments yet.';
+      }
+    };
+
+    // Initial load
+    loadComments();
+  </script>
+-->
+
+    <div class="comment-section">
+      <h2 class="info">Comments</h2>
+      <input type="text" id="name" placeholder="Your name">
+      <textarea id="comment" rows="3" placeholder="Write a comment..."></textarea>
+      <button onclick="addComment()">Post Comment</button>
+      <button onclick="clearComments()">Clear All Comments</button>
+
+      <div id="comments">No comments yet.</div>
+    </div>
+
+    <style>
+    .comment-section {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .comment-section h2 {
+      margin-bottom: 10px;
+      color: #f1f1f1;
+    }
+
+    .comment-section input,
+    .comment-section textarea {
+      width: 100%;
+      margin: 5px 0;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+
+    .comment-section button {
+      margin: 5px 5px 10px 0;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    .comment-section button:hover {
+      background-color: #555;
+    }
+
+    #comments {
+      margin-top: 15px;
+    }
+
+    .comment-item {
+      padding: 8px;
+      border-bottom: 1px solid #444;
+    }
+
+    .comment-item strong {
+      color: #ffcc00;
+    }
+    </style>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+    <script>
+  const firebaseConfig = {
+    apiKey: "",
+    authDomain: "nairlyticsblogcomments.firebaseapp.com",
+    databaseURL: "https://nairlyticsblogcomments-default-rtdb.firebaseio.com",
+    projectId: "nairlyticsblogcomments",
+    storageBucket: "nairlyticsblogcomments.firebasestorage.app",
+    messagingSenderId: "205708510514",
+    appId: "1:205708510514:web:6cfdb9a775a06d152dc32b",
+    measurementId: "G-JGSF2DKN44"
+  };
+
+
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+
+      const commentsDiv = document.getElementById("comments");
+
+      // Display a comment
+      const displayComment = (name, text) => {
+        const commentEl = document.createElement("div");
+        commentEl.classList.add("comment-item");
+        const strong = document.createElement("strong");
+        strong.textContent = name + ": ";
+        const span = document.createElement("span");
+        span.textContent = text;
+        commentEl.appendChild(strong);
+        commentEl.appendChild(span);
+        commentsDiv.prepend(commentEl);
+      };
+
+      // Add a new comment
+      window.addComment = function() {
+        const name = document.getElementById("name").value.trim();
+        const commentText = document.getElementById("comment").value.trim();
+        if (!name || !commentText) {
+          alert("Please enter both name and comment.");
+          return;
+        }
+
+        db.ref("comments").push({ name, text: commentText });
+
+        document.getElementById("name").value = "";
+        document.getElementById("comment").value = "";
+      };
+
+      // Load comments in real-time
+      db.ref("comments").on("child_added", snapshot => {
+        const c = snapshot.val();
+        displayComment(c.name, c.text);
+      });
+
+      // Clear all comments
+      window.clearComments = function() {
+        if (confirm("Are you sure you want to delete all comments?")) {
+          db.ref("comments").remove();
+          commentsDiv.innerHTML = "No comments yet.";
+        }
+      };
+    </script>
+
+
+</body>
+</html>
