@@ -159,6 +159,66 @@ body {
   color: white;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Page wrapper */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top section */
+.top {
+  font-family: "Quantico", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+/* Image */
+.image-box img {
+  width: 280px;
+  border-radius: 12px;
+}
+
+/* Text */
+.text-box {
+  flex: 1;
+  max-width: none;
+}
+
+.text-box h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.contact {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+
 .resume-container {
   width: 80%;
   max-width: 900px;
@@ -177,8 +237,8 @@ body {
 }
 
 .linkedin {
-  display: block;
   margin: auto;
+  display: block;
   border-radius: 25%;
 }
 
