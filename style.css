@@ -227,8 +227,8 @@ button {
   padding: 8px 12px;
   border-radius: 3px;
   cursor: pointer;
-  font-family: "Workbench", sans-serif;
-  font-weight: 700;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700px;
   font-style: normal;
   text-align: center;
   color: white;
@@ -246,9 +246,27 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: "Quantico", sans-serif;
 }
 
 a:hover, a:active {
+  background-color: white;
+  color: black;
+  font-family: "Quantico", sans-serif;
+}
+
+blogButton {
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700px;
+}
+
+blogButton:hover {
   background-color: white;
   color: black;
 }
